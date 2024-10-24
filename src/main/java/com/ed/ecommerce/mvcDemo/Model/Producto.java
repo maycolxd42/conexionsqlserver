@@ -16,11 +16,11 @@ public class Producto {
     private String imagen;
     private int idCategoriaProducto;
 
-    // Constructor vacío
+
     public Producto() {
     }
 
-    // Constructor con todos los atributos
+
     public Producto(int idProducto, String nombre, String descripcion, double precio, String imagen, int idCategoriaProducto) {
         this.idProducto = idProducto;
         this.nombre = nombre;
@@ -30,7 +30,7 @@ public class Producto {
         this.idCategoriaProducto = idCategoriaProducto;
     }
 
-    // Getters y Setters
+
     public int getIdProducto() {
         return idProducto;
     }

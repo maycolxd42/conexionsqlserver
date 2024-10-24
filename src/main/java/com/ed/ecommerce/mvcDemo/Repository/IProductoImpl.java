@@ -14,7 +14,7 @@ import java.util.List;
 @Repository
 public class IProductoImpl implements IProducto {
 
-    // Listar todos los productos
+
     @Override
     public List<Producto> Listar() {
         List<Producto> productos = new ArrayList<>();
@@ -41,7 +41,7 @@ public class IProductoImpl implements IProducto {
         return productos;
     }
 
-    // Listar producto por ID
+
     @Override
     public Producto ListarPorId(int id) {
         Producto producto = null;
@@ -68,7 +68,7 @@ public class IProductoImpl implements IProducto {
         return producto;
     }
 
-    // Crear un nuevo producto
+
     @Override
     public int crear(Producto producto) {
         String query = "INSERT INTO Producto (nombre, descripcion, precio, imagen, idCategoriaProducto) VALUES (?, ?, ?, ?, ?)";
@@ -90,7 +90,7 @@ public class IProductoImpl implements IProducto {
         return resultado;
     }
 
-    // Modificar un producto existente
+
     @Override
     public int modificar(Producto producto) {
         String query = "UPDATE Producto SET nombre = ?, descripcion = ?, precio = ?, imagen = ?, idCategoriaProducto = ? WHERE idProducto = ?";
@@ -113,7 +113,7 @@ public class IProductoImpl implements IProducto {
         return resultado;
     }
 
-    // Eliminar un producto por ID
+
     @Override
     public int eliminar(int id) {
         String query = "DELETE FROM Producto WHERE idProducto = ?";
